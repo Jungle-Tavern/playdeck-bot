@@ -16,7 +16,6 @@ function ApplicationLaunched() {
 function ApplicationLoaded() {
   setProgress(100);
   setTimeout(() => {
-    document.getElementById("loading-screen").style.display = "none";
     document.getElementById("unity-container").style.display = "block";
   }, 1000);
 }
