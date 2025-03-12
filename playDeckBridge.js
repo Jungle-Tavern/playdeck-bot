@@ -23,6 +23,7 @@ var playDeckBridge = (function() {
             _unityInstance?.SendMessage("PlayDeckBridge", "RequestPaymentHandler", JSON.stringify(playdeck.value))
         }
         else if (playdeck.method === "getPaymentInfo") {
+            console.log("|getPaymentInfo| ");
             console.log(playdeck.value);
             _unityInstance?.SendMessage("PlayDeckBridge", "GetPaymentInfoHandler", JSON.stringify(playdeck.value))
         }
